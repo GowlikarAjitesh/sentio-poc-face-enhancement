@@ -1,0 +1,113 @@
+{
+    "dataset_used": "dataset/Profiles_1",
+    "total_faces": 10,
+    "target_output_size": {
+        "width": 240,
+        "height": 240
+    },
+    "pipeline": [
+        "Stage 1 - Adaptive denoising using cv2.fastNlMeansDenoisingColored",
+        "Stage 2 - CLAHE in LAB space on L channel only",
+        "Stage 3 - Multi-step Lanczos upscaling with luminance sharpening and gentle bilateral cleanup",
+        "Stage 4 - Face-aware zone sharpening stronger around eye+nose region"
+    ],
+    "avg_sharpness_raw": 56.18811486226623,
+    "avg_sharpness_enhanced": 575.8165742413255,
+    "avg_sharpness_gain": 519.6284593790593,
+    "avg_ssim": 0.38773438126655146,
+    "avg_runtime_ms": 842.4547200091183,
+    "recognition_accuracy_improvement": null,
+    "recognition_accuracy_note": "Not computed because separate reference_identities/ folder was not available in the provided dataset bundle.",
+    "faces": [
+        {
+            "filename": "AARAV.png",
+            "sharpness_raw": 49.56900455348812,
+            "sharpness_enhanced": 571.427499468316,
+            "sharpness_gain": 521.8584949148279,
+            "ssim": 0.29241588215176867,
+            "runtime_ms": 2954.293899994809,
+            "enhanced_output": "enhanced_faces/AARAV.jpg"
+        },
+        {
+            "filename": "Anamika.png",
+            "sharpness_raw": 33.409954871945544,
+            "sharpness_enhanced": 382.26220648118004,
+            "sharpness_gain": 348.8522516092345,
+            "ssim": 0.3277429919001402,
+            "runtime_ms": 587.5205000047572,
+            "enhanced_output": "enhanced_faces/Anamika.jpg"
+        },
+        {
+            "filename": "Harshita.png",
+            "sharpness_raw": 59.88534147332368,
+            "sharpness_enhanced": 930.1325517746914,
+            "sharpness_gain": 870.2472103013677,
+            "ssim": 0.30349665226373257,
+            "runtime_ms": 1088.6785000329837,
+            "enhanced_output": "enhanced_faces/Harshita.jpg"
+        },
+        {
+            "filename": "Jahanvi.png",
+            "sharpness_raw": 82.86454084729222,
+            "sharpness_enhanced": 453.4465937065972,
+            "sharpness_gain": 370.58205285930495,
+            "ssim": 0.3374558509991503,
+            "runtime_ms": 580.6844000471756,
+            "enhanced_output": "enhanced_faces/Jahanvi.jpg"
+        },
+        {
+            "filename": "Manav.png",
+            "sharpness_raw": 39.69121913613929,
+            "sharpness_enhanced": 727.262186341387,
+            "sharpness_gain": 687.5709672052477,
+            "ssim": 0.32024582376953503,
+            "runtime_ms": 882.1105000097305,
+            "enhanced_output": "enhanced_faces/Manav.jpg"
+        },
+        {
+            "filename": "Mohini.png",
+            "sharpness_raw": 68.3428965729813,
+            "sharpness_enhanced": 602.7994159044054,
+            "sharpness_gain": 534.456519331424,
+            "ssim": 0.2785776746230123,
+            "runtime_ms": 668.1815999909304,
+            "enhanced_output": "enhanced_faces/Mohini.jpg"
+        },
+        {
+            "filename": "Ranjhana.png",
+            "sharpness_raw": 35.57931967430408,
+            "sharpness_enhanced": 275.7560410831404,
+            "sharpness_gain": 240.17672140883633,
+            "ssim": 0.7500900666507542,
+            "runtime_ms": 303.7709000054747,
+            "enhanced_output": "enhanced_faces/Ranjhana.jpg"
+        },
+        {
+            "filename": "Rohini.png",
+            "sharpness_raw": 51.52952780230966,
+            "sharpness_enhanced": 340.5501385802469,
+            "sharpness_gain": 289.02061077793724,
+            "ssim": 0.27933435747553736,
+            "runtime_ms": 331.56550000421703,
+            "enhanced_output": "enhanced_faces/Rohini.jpg"
+        },
+        {
+            "filename": "Sparshita.png",
+            "sharpness_raw": 74.07476750947765,
+            "sharpness_enhanced": 1190.8083332561728,
+            "sharpness_gain": 1116.7335657466951,
+            "ssim": 0.37545056700180374,
+            "runtime_ms": 749.536499963142,
+            "enhanced_output": "enhanced_faces/Sparshita.jpg"
+        },
+        {
+            "filename": "Sushmita.png",
+            "sharpness_raw": 66.93457618140081,
+            "sharpness_enhanced": 283.72077581711756,
+            "sharpness_gain": 216.78619963571674,
+            "ssim": 0.6125339458300806,
+            "runtime_ms": 278.20490003796294,
+            "enhanced_output": "enhanced_faces/Sushmita.jpg"
+        }
+    ]
+}

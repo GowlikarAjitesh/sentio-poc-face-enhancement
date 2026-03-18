@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Face Enhancement Report</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Low-Resolution CCTV Face Enhancement Report</h1>
+        <div class="muted">Generated offline on: 2026-03-18 16:32:15</div>
+        <div class="muted">
+          Student submission report with A/B comparison and quality metrics.
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Total Faces</h3>
+          <div class="value">10</div>
+        </div>
+        <div class="card">
+          <h3>Avg Sharpness (Raw)</h3>
+          <div class="value">56.19</div>
+        </div>
+        <div class="card">
+          <h3>Avg Sharpness (Enhanced)</h3>
+          <div class="value">575.82</div>
+        </div>
+        <div class="card">
+          <h3>Avg Sharpness Gain</h3>
+          <div class="value">519.63</div>
+        </div>
+        <div class="card">
+          <h3>Avg SSIM</h3>
+          <div class="value">0.3877</div>
+        </div>
+        <div class="card">
+          <h3>Avg Runtime / Face</h3>
+          <div class="value">842.45 ms</div>
+        </div>
+      </div>
+      <div class="note">
+        <strong>Important note:</strong> The official assignment mentions a
+        separate <code>reference_identities/</code> folder to compute
+        recognition accuracy improvement. That folder is not present in the
+        provided dataset bundle here. So this report measures the enhancement
+        quality honestly using available metrics only: sharpness gain, SSIM, and
+        runtime.
+      </div>
+      <table>
+        <tr>
+          <th>Filename</th>
+          <th>Raw</th>
+          <th>Enhanced</th>
+          <th>Raw Sharpness</th>
+          <th>Enhanced Sharpness</th>
+          <th>Gain</th>
+          <th>SSIM</th>
+          <th>Runtime</th>
+        </tr>
+        <tr>
+          <td>AARAV.png</td>
+          <td><img src="dataset/Profiles_1/AARAV.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/AARAV.jpg" alt="enhanced" /></td>
+          <td>49.57</td>
+          <td>571.43</td>
+          <td>521.86</td>
+          <td>0.2924</td>
+          <td>2954.29 ms</td>
+        </tr>
+        <tr>
+          <td>Anamika.png</td>
+          <td><img src="dataset/Profiles_1/Anamika.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Anamika.jpg" alt="enhanced" /></td>
+          <td>33.41</td>
+          <td>382.26</td>
+          <td>348.85</td>
+          <td>0.3277</td>
+          <td>587.52 ms</td>
+        </tr>
+        <tr>
+          <td>Harshita.png</td>
+          <td><img src="dataset/Profiles_1/Harshita.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Harshita.jpg" alt="enhanced" /></td>
+          <td>59.89</td>
+          <td>930.13</td>
+          <td>870.25</td>
+          <td>0.3035</td>
+          <td>1088.68 ms</td>
+        </tr>
+        <tr>
+          <td>Jahanvi.png</td>
+          <td><img src="dataset/Profiles_1/Jahanvi.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Jahanvi.jpg" alt="enhanced" /></td>
+          <td>82.86</td>
+          <td>453.45</td>
+          <td>370.58</td>
+          <td>0.3375</td>
+          <td>580.68 ms</td>
+        </tr>
+        <tr>
+          <td>Manav.png</td>
+          <td><img src="dataset/Profiles_1/Manav.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Manav.jpg" alt="enhanced" /></td>
+          <td>39.69</td>
+          <td>727.26</td>
+          <td>687.57</td>
+          <td>0.3202</td>
+          <td>882.11 ms</td>
+        </tr>
+        <tr>
+          <td>Mohini.png</td>
+          <td><img src="dataset/Profiles_1/Mohini.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Mohini.jpg" alt="enhanced" /></td>
+          <td>68.34</td>
+          <td>602.80</td>
+          <td>534.46</td>
+          <td>0.2786</td>
+          <td>668.18 ms</td>
+        </tr>
+        <tr>
+          <td>Ranjhana.png</td>
+          <td><img src="dataset/Profiles_1/Ranjhana.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Ranjhana.jpg" alt="enhanced" /></td>
+          <td>35.58</td>
+          <td>275.76</td>
+          <td>240.18</td>
+          <td>0.7501</td>
+          <td>303.77 ms</td>
+        </tr>
+        <tr>
+          <td>Rohini.png</td>
+          <td><img src="dataset/Profiles_1/Rohini.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Rohini.jpg" alt="enhanced" /></td>
+          <td>51.53</td>
+          <td>340.55</td>
+          <td>289.02</td>
+          <td>0.2793</td>
+          <td>331.57 ms</td>
+        </tr>
+        <tr>
+          <td>Sparshita.png</td>
+          <td><img src="dataset/Profiles_1/Sparshita.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Sparshita.jpg" alt="enhanced" /></td>
+          <td>74.07</td>
+          <td>1190.81</td>
+          <td>1116.73</td>
+          <td>0.3755</td>
+          <td>749.54 ms</td>
+        </tr>
+        <tr>
+          <td>Sushmita.png</td>
+          <td><img src="dataset/Profiles_1/Sushmita.png" alt="raw" /></td>
+          <td><img src="enhanced_faces/Sushmita.jpg" alt="enhanced" /></td>
+          <td>66.93</td>
+          <td>283.72</td>
+          <td>216.79</td>
+          <td>0.6125</td>
+          <td>278.20 ms</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
